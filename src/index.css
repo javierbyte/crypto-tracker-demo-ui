@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --main-font-family: urw-din, sans-serif;
+
+  --base-font-size: 18px;
+  --base-font-color: #444;
+  --base-border-radius: 3px;
+
+  --content-width: 980px;
+
+  --color-system-1: #fcfcfc;
+  --color-system-2: #eee;
+  --color-system-3: #ddd;
+
+  --space: 1rem;
+
+  --input-height: 2.4rem;
+}
+
+:root {
+  --base-font-color: #ddd;
+
+  --color-accent: #27ae60;
+
+  --color-system-1: #222;
+  --color-system-2: #333;
+  --color-system-3: #444;
+}
+
+body {
+  background-color: var(--color-system-1);
+}
+
+body,
+input,
+select,
+textarea {
+  color: var(--base-font-color);
+  font-size: var(--base-font-size);
+  font-family: var(--main-font-family);
+}
+
+.padding-1 {
+  padding: var(--space);
+}
+.padding-vertical-1 {
+  padding-top: var(--space);
+  padding-bottom: var(--space);
+}
+.space-1 {
+  padding-right: var(--space);
+  padding-bottom: calc(var(--space) * 0.5);
+}
+
+@media screen and (max-width: 960px) {
+  :root {
+    --base-font-size: 16px;
+    --space: 0.9rem;
+    --input-height: 2.2rem;
+  }
+
+  .-hide-on-mobile {
+    display: none;
+  }
+}

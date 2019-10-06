@@ -1,0 +1,19 @@
+.kamina-table {
+	width: 100%;
+}
+
+.kamina-table thead {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.kamina-table td,
+.kamina-table th {
+  padding: 1rem 0.5rem;
+  line-height: 1rem;
+}
+
+.kamina-table tbody tr:nth-child(2n + 1) {
+  background: rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,35 @@
+.kamina-options {
+  border: 1px solid #ccc;
+  display: flex;
+  height: var(--input-height);
+  border-radius: var(--base-border-radius);
+  cursor: pointer;
+  user-select: none;
+}
+
+.kamina-options-el {
+  line-height: calc(var(--input-height) * 0.95);
+  padding: 0 var(--space);
+  border-left: 1px solid #ccc;
+  opacity: 0.8;
+}
+.kamina-options-el:nth-child(1) {
+  border-left: none;
+}
+
+.kamina-options-el.-active {
+  color: var(--color-accent);
+  font-weight: 700;
+  opacity: 1;
+  background: linear-gradient(
+    rgba(128, 128, 128, 0.25),
+    rgba(128, 128, 128, 0.2)
+  );
+}
+
+.kamina-option-label {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding-bottom: 0.2rem;
+}

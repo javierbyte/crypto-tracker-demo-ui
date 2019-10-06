@@ -1,0 +1,20 @@
+.kamina-container {
+  max-width: var(--content-width);
+  width: 100%;
+  margin: 0 auto;
+  padding-left: var(--space);
+  padding-right: var(--space);
+
+  opacity: 1;
+  transform: translatey(0);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.kamina-container.kamina-container-main {
+  padding: calc(var(--space) + var(--topnav-height)) var(--space) calc(var(--space) * 3);
+}
+
+.kamina-container.-loading {
+  opacity: 0;
+  transform: translatey(0.5rem);
+}
